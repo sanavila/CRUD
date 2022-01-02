@@ -12,7 +12,7 @@ const cursos  = ['FullStack Master', 'Desenvolvimento de games', 'Viver de Youtu
 //CRUD create, read, update,  delete
 //retorna um curso 
 
-app.get('/cursos/:index', (req, res) => {
+server.get('/cursos/:index', (req, res) => {
     const {index} = req.params;
     
     return res.json(cursos[index]);
